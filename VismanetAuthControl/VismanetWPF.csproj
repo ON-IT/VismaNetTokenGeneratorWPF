@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net4.8</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Ole Melhus</Authors>
+    <Company>ON IT AS</Company>
+    <Description>A controller to authenticate with Visma.net and generate an API token</Description>
+    <Copyright>ON IT AS</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1054.31" />
+    <PackageReference Include="Visma.net" Version="3.7.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="VismaNetAuthControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

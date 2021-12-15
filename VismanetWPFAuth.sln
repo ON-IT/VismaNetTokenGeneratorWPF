@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismanetWPFAuth", "VismanetWPFAuth\VismanetWPFAuth.csproj", "{BC703A5D-5D4D-464A-8F04-17448E0E9028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VismanetWPF", "VismanetAuthControl\VismanetWPF.csproj", "{A507EB09-47EF-4C96-8716-894B88451732}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC703A5D-5D4D-464A-8F04-17448E0E9028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC703A5D-5D4D-464A-8F04-17448E0E9028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC703A5D-5D4D-464A-8F04-17448E0E9028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC703A5D-5D4D-464A-8F04-17448E0E9028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A507EB09-47EF-4C96-8716-894B88451732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A507EB09-47EF-4C96-8716-894B88451732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A507EB09-47EF-4C96-8716-894B88451732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A507EB09-47EF-4C96-8716-894B88451732}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9C11B5C-46A2-417D-9F89-3061E134D18C}
+	EndGlobalSection
+EndGlobal
