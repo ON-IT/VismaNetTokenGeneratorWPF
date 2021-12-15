@@ -14,7 +14,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-        <VismanetWPF:AuthControl Grid.Row="0" Name="VismaNetControl" OnTokenReceived="AuthControl_OnTokenReceived">
+        <VismanetWPF:AuthControl Grid.Row="0" Name="VismaNetControl" ShowTokenIfSuccessful="true" OnTokenReceived="AuthControl_OnTokenReceived">
         </VismanetWPF:AuthControl>
         <Border BorderThickness="1" BorderBrush="Azure"></Border>
         <Grid Grid.Row="1" Background="AliceBlue">
