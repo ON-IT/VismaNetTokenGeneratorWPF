@@ -89,7 +89,6 @@ namespace VismanetWPFAuth
                 Clipboard.SetText(e);
             }
             catch (Exception) { }
-            MessageBox.Show($"Token: {e}");
         }
 
         private void ClientSecret_PasswordChanged(object sender, RoutedEventArgs e)
