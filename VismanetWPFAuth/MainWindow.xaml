@@ -5,36 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:VismanetWPF="clr-namespace:VismanetWPF;assembly=VismanetWPF"
         mc:Ignorable="d"
-        Title="Visma.net Token Generator" Height="670" Width="800">
+        Title="Visma.net Token Generator by ON IT AS" Height="753" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="130"/>
+            <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
         <VismanetWPF:AuthControl Grid.Row="0" Name="VismaNetControl" OnTokenReceived="AuthControl_OnTokenReceived">
         </VismanetWPF:AuthControl>
         <Border BorderThickness="1" BorderBrush="Azure"></Border>
         <Grid Grid.Row="1" Background="AliceBlue">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="25"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">Client Id</Label>
-            <TextBox Grid.Row="0" Grid.Column="1" Name="InputClientId" Margin="8" Padding="4" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="InputClientId" Margin="8,8,4,8" Padding="4" />
             <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">Client Secret</Label>
-            <PasswordBox Grid.Row="1" Grid.Column="1" PasswordChanged="ClientSecret_PasswordChanged" Name="InputClientSecret"  Margin="8" Padding="4"/>
+            <PasswordBox Grid.Row="1" Grid.Column="1" PasswordChanged="ClientSecret_PasswordChanged" Name="InputClientSecret"  Margin="8,8,4,8" Padding="4"/>
             <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Center">Callback URL</Label>
-            <TextBox Grid.Row="2" Grid.Column="1" Name="InputCallbackUrl" Margin="8" Padding="4"/>
-            <Button Grid.Row="1" Grid.Column="2" Margin="4" Name="SaveSettings" Click="SaveSettings_Click">Go</Button>
+            <TextBox Grid.Row="2" Grid.Column="1" Name="InputCallbackUrl" Margin="8,8,4,8" Padding="4"/>
+            <Button Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Margin="4,8,8,8" Background="Blue" Foreground="White" Name="SaveSettings" Click="SaveSettings_Click">GO</Button>
+            <TextBlock Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Gray">Created by ON IT AS (post@on-it.no)</TextBlock>
         </Grid>
     </Grid>
 </Window>
